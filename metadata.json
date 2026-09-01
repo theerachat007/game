@@ -1,0 +1,6 @@
+{
+  "name": "ระบบบริหารทรัพย์สินมหาวิทยาลัย",
+  "description": "ระบบบริหารจัดการและติดตามทรัพย์สินในมหาวิทยาลัย พร้อมระบบยืม-คืนครุภัณฑ์ พิมพ์บาร์โค้ด/คิวอาร์โค้ด สแกนตรวจนับ รายงาน และเชื่อมต่อ Google Sheets",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
