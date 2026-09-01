@@ -11,6 +11,7 @@ import {
 import {
   addHistoryLog,
   exportAssetsToExcel,
+  exportHistoryToExcel,
   loadAssets,
   loadCurrentUser,
   loadHistory,
@@ -558,9 +559,13 @@ export default function App() {
           {currentTab === 'reports' && currentUser.role === 'admin' && (
             <ReportsView
               assets={assets}
+              history={history}
               settings={settings}
               onExportExcel={(customList, customName) =>
                 exportAssetsToExcel(customList || assets, customName)
+              }
+              onExportHistoryExcel={(customHist, customName) =>
+                exportHistoryToExcel(customHist || history, customName)
               }
             />
           )}
